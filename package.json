@@ -1,0 +1,37 @@
+{
+  "name": "fancy-weather",
+  "version": "1.0.0",
+  "description": "",
+  "main": "webpack.config.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rolling-scopes-school/uwetu-RS2019Q3/fancy-weather.git"
+  },
+  "author": "Petr Penner",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rolling-scopes-school/uwetu-RS2019Q3/fancy-weather/issues"
+  },
+  "homepage": "https://github.com/rolling-scopes-school/uwetu-RS2019Q3/fancy-weather#readme",
+  "devDependencies": {
+    "css-loader": "^3.2.0",
+    "eslint": "^6.1.0",
+    "eslint-config-airbnb-base": "^14.0.0",
+    "eslint-config-prettier": "^6.7.0",
+    "eslint-plugin-import": "^2.18.2",
+    "eslint-plugin-prettier": "^3.1.1",
+    "extract-text-webpack-plugin": "^4.0.0-beta.0",
+    "husky": "^3.1.0",
+    "lint-staged": "^9.5.0",
+    "node-sass": "^4.12.0",
+    "prettier": "^1.19.1",
+    "sass-loader": "^8.0.0",
+    "style-loader": "^1.0.0",
+    "webpack": "^4.41.2",
+    "webpack-cli": "^3.3.9"
+  },
+  "scripts": {
+    "build": "webpack -p",
+    "start": "webpack --watch"
+  }
+}

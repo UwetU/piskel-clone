@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./dist/style.css">
+    <title>PISKEL</title>
+</head>
+<body>
+    <div class="wrapper">
+        <nav class="navigation_bar">
+            <h2>PISKEL - CLONE</h2>
+        </nav>
+        <div class="main_content">
+            <aside class="control">
+                <button class="btn active" id="pencil">
+                    <img src="./assets/pencil.svg" alt="icon">
+                </button>
+                <select class="sizePencil" name="sizePencil" id="selectSizePencil">
+                    <option value = "1" selected>1px</option>
+                    <option value = "2">2px</option>
+                    <option value = "3">3px</option>
+                    <option value = "4">4px</option>
+                </select>
+                <button class="btn" id="bucket">
+                    <img src="./assets/bucket.svg" alt="icon">
+                </button>
+                <button class="btn" id="pipette">
+                    <img src="./assets/choose.svg" alt="icon">
+                </button>
+                <button class="btn" id="stroke">
+                    <img src="./assets/stroke.svg" alt="icon">
+                </button>
+                <button class="btn" id="eraser">
+                    <img src="./assets/eraser.svg" alt="icon">
+                </button>
+                <button class="btn">
+                    <input type="color" class="circle" id="currentColor" value="#ffffff" >
+                </button>
+                <button class="btn" id="btnPrevColor">
+                    <div class="circle" id="prevColor"></div>
+                </button>
+            </aside>
+            <div class="control_frames">
+                <div class="frame"></div>
+                <button class="add" id="newFrame">+</button>
+            </div>
+            <div class="control_canvas">
+                <div class="control_items">
+                    <select class="size" name="size" id="selectSize">
+                        <option value = "32">32x32</option>
+                        <option value = "64">64x64</option>
+                        <option value = "128" selected>128x128</option>
+                    </select>
+                </div>
+                <div class="canvas_container">
+                    <canvas class="canvas_image" id="canvas_one"></canvas>
+                    <canvas class="canvas_image layer_one" id="canvas_two"></canvas>
+                </div>
+                
+            </div>
+            
+        </div> 
+    </div>
+    <script src="./dist/bundle.js"></script>
+</body>
+</html>
