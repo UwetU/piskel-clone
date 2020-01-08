@@ -41,8 +41,11 @@
                     <div class="circle" id="prevColor"></div>
                 </button>
             </aside>
-            <div class="control_frames">
-                <div class="frame"></div>
+            <div class="control_frames" id="frameСontainer">
+                <div class="frame">
+                    <canvas class="frame_canvas" id="frameGridCanvas"></canvas>
+                    <canvas class="frame_canvas layer_one" id="frameDrawCanvas"></canvas>
+                </div>
                 <button class="add" id="newFrame">+</button>
             </div>
             <div class="control_canvas">
@@ -56,10 +59,13 @@
                 <div class="canvas_container">
                     <canvas class="canvas_image" id="canvas_one"></canvas>
                     <canvas class="canvas_image layer_one" id="canvas_two"></canvas>
-                </div>
-                
+                </div>    
             </div>
-            
+           <div class="control_preview">
+                <div class="preview__block"></div>
+                <input type="range" min="0" max="24" step="1" value="12" class="fps" id="range">
+                <p class="count_fps">12 FPS</p>
+           </div> 
         </div> 
     </div>
     <script src="./dist/bundle.js"></script>
